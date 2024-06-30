@@ -1,5 +1,6 @@
 <script>
 	import Nav from './lib/components/NavBar.svelte';
+	import Foo from './lib/components/Reserve.svelte';
   </script>
   
   <Nav />
@@ -11,6 +12,8 @@
 	<section id="services">Services Content</section>
 	<section id="contact">Contact Content</section>
   </main>
+
+  <Foo />
   
   <style>
 	main {

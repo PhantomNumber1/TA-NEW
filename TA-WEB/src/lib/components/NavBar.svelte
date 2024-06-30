@@ -9,22 +9,32 @@
       align-items: center;
       padding: 1rem 1rem;
       background-color: #1A1F21;
-      color: white;
       position: fixed;
       top:0;
       left: 0;
       width: 100%;
+      height: 3rem;
     }
-  
-    .menu a {
+    
+    .menu.open {
+      padding: 1rem 1rem;
+    }
+
+    .navbar .menu a {
         color: white;
         text-decoration: none;
         padding: 0.5rem 0.5rem;
         position: relative;
+        /*transition: font-size 0.3s ease-in-out; check if its required
+    }
+
+    .navbar .menu a:hover{
+      font-size: 1.1em;
+    }*/
     }
 
     .navbar .menu a::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -35,21 +45,17 @@
         transform: translateX(12.5%);
     }
 
-    .menu a:hover::after {
+    .navbar .menu a:hover::after {
         width: calc(100% - 1rem);
         left: 0;
     }
 
-    .menu{
-        margin-right: 3rem;
-        display: flex;
-        gap: 0.1rem;
-    }
+    
     
     img{
       width: 15%;
     }
-  
+
     @media (max-width: 768px) {
       .navbar .menu.open {
         display: flex;
